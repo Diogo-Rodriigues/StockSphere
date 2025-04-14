@@ -52,7 +52,7 @@ StockSphere is a modern web application that provides users with comprehensive f
 ### Backend
 - ASP.NET Core
 - Entity Framework Core
-- SQL Server (I used postgresSQL)
+- SQL Server (I used postgreSQL)
 - JWT Authentication
 - RESTful API architecture
 
@@ -60,38 +60,52 @@ StockSphere is a modern web application that provides users with comprehensive f
 
 - Node.js (v14 or higher)
 - .NET 6.0 SDK
-- SQL Server (I used postgresSQL)
+- SQL Server (I used postgreSQL)
 - Git
 
 ## Installation Guide
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/FinMedia.git
+   git clone https://github.com/Diogo-Rodriigues/StockSphere.git
    cd StockSphere
    ```
 
-2. **Backend Setup**
+2. **Environment Configuration**
+   - Backend (After creating the SQL database (in my case postgreSQL)):  
+   Update `appsettings.json` with your database connection string, the financial modeling prep API key and the JWT password:
+      ```
+       "ConnectionStrings": {
+        "DefaultConnection": "Host=_DB_HOST_(localhost);Database=_DB_NAME_;Username=_DB_USERNAME;Password=_DB_PASSWORD_"
+        }
+       "FMPKey": "_financialmodelingprepapikey_",
+       "JWT": {
+         "Issuer": "http://localhost:5246",
+         "Audience": "http://localhost:5246",
+         "SigningKey": "this_key_must_have_more_than_512_bits(64chars)_due_to_the_algorithm_that_JWT_uses"
+       }
+      ```
+   - Frontend: Change the `.env` file with the your financial modeling prep api key:
+     ```
+     REACT_APP_API_KEY=_financialmodelingprepapikey_
+     ```
+
+4. **Backend Setup**
    ```bash
    cd backend
-   dotnet restore
+   dotnet ef migrations remove
+   dotnet ef migrations add InitialPostgresMigration
    dotnet ef database update
-   dotnet run
+   (if you haven't installed it: dotnet tool install --global dotnet-ef)
+   dotnet watch run or dotnet run
    ```
 
-3. **Frontend Setup**
+5. **Frontend Setup**
    ```bash
    cd frontend
    npm install
    npm start
    ```
-
-4. **Environment Configuration**
-   - Backend: Update `appsettings.json` with your database connection string
-   - Frontend: Create a `.env` file with the following:
-     ```
-     REACT_APP_API_URL=http://localhost:5167
-     ```
 
 ## Project Structure
 
@@ -134,12 +148,20 @@ StockSphere is a modern web application that provides users with comprehensive f
 ```
 
 ## Contributing
+Contributions to improve the Library Management System are welcome. Please follow these steps:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the repository:
+   ![fork](https://github.com/user-attachments/assets/40a18cf5-031e-4134-bd73-e87cf22b57aa)
+2. Clone the fork (`git clone https://github.com/Diogo-Rodriigues/StockSphere.git`)
+3. Navigate to the project directory (`cd StockSphere`)
+4. Create a new branch (`git checkout -b feature/feature_name`)
+5. Make your changes
+6. Commit your changes (`git add file_name`) | (`git commit -m "description"`)
+7. Push to the branch (`git push origin feature/feature_name`)
+8. Open a Pull Request
+   ![pr](https://github.com/user-attachments/assets/0fb5947b-2a31-4240-b00d-12c9de24eee7)
+9. Add a title and description for your Pull Request:
+    ![submmit](https://github.com/user-attachments/assets/a30c6f0a-8752-43c4-965a-279220b01279)
 
 ## License
 

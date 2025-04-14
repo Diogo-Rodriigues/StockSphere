@@ -73,7 +73,7 @@ StockSphere is a modern web application that provides users with comprehensive f
 
 2. **Environment Configuration**
    - Backend (After creating the SQL database (in my case postgreSQL)):  
-   Update `appsettings.json` with your database connection string, the financial modeling prep API key and the JWT password:
+   Update `appsettings.json` with your database connection string (this example is for postgreSQL), the financial modeling prep API key and the JWT password:
       ```
        "ConnectionStrings": {
         "DefaultConnection": "Host=_DB_HOST_(localhost);Database=_DB_NAME_;Username=_DB_USERNAME;Password=_DB_PASSWORD_"

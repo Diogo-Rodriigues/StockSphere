@@ -14,8 +14,7 @@ StockSphere is a modern web application that provides users with comprehensive f
 
 - **Stock Portfolio Management**
   - Add and remove stocks from your portfolio
-  - Track stock metrics and changes
-
+![image](https://github.com/user-attachments/assets/822af19f-ece2-42be-a6ff-ea2cd146be99)
 
 - **Company Information**
   - Detailed company profiles
@@ -23,16 +22,26 @@ StockSphere is a modern web application that provides users with comprehensive f
   - Company descriptions and sector information
   - 10-K filings access
   - Competitor analysis
+![image](https://github.com/user-attachments/assets/4842627a-db1e-46d7-a539-6b3e7a322642)
+![image](https://github.com/user-attachments/assets/84b01e43-8a56-474d-ba24-84d4a9dc2ebd)
+![image](https://github.com/user-attachments/assets/e6a5da39-1f4f-4efd-af7f-58d280b7fac9)
+![image](https://github.com/user-attachments/assets/a6aef90b-7911-4abf-a640-ba9cfc5db87e)
+![image](https://github.com/user-attachments/assets/d43e1cf5-9a93-43e0-85c1-6afd06e58ad3)
+![image](https://github.com/user-attachments/assets/457ac295-74d0-4e08-89e1-4628f0d83aa6)
+
 
 - **Stock Search**
   - Search for companies by symbol or name
   - Real-time search results
   - Quick access to company information
+![image](https://github.com/user-attachments/assets/a7d7f749-6ada-427a-818d-d370d30df185)
+![image](https://github.com/user-attachments/assets/73a01748-820a-4bd7-9326-d42f28333ec5)
 
 - **Market Commentary (It's not completely finished :) )**
   - User-generated comments and discussions
   - Share insights about stocks
   - Community engagement
+![image](https://github.com/user-attachments/assets/fbe8ac89-9a7e-48dc-8817-50a32b8f16be)
 
 - **Modern UI/UX**
   - Responsive design

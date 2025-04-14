@@ -104,7 +104,7 @@ StockSphere is a modern web application that provides users with comprehensive f
          "SigningKey": "this_key_must_have_more_than_512_bits(64chars)_due_to_the_algorithm_that_JWT_uses"
        }
       ```
-   - Frontend: Change the `.env` file with the your financial modeling prep api key:
+   - Frontend: Create a `.env` file with the following:
      ```
      REACT_APP_API_KEY=_financialmodelingprepapikey_
      ```

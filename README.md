@@ -9,10 +9,13 @@ StockSphere is a modern web application that provides users with comprehensive f
   - JWT-based authentication
   - Protected routes for authenticated users
 ![image](https://github.com/user-attachments/assets/bdf1ee0e-02e0-4938-89ab-4f57580c9dc5)
+![image](https://github.com/user-attachments/assets/e3afb759-e6e2-4f8e-8670-13051a7e5319)
+![image](https://github.com/user-attachments/assets/d11c7829-6355-44d4-ab2a-8930df0bfc11)
 
 - **Stock Portfolio Management**
   - Add and remove stocks from your portfolio
   - Track stock metrics and changes
+
 
 - **Company Information**
   - Detailed company profiles
@@ -37,6 +40,12 @@ StockSphere is a modern web application that provides users with comprehensive f
   - Smooth animations
   - Dark theme with purple/blue color scheme
   - Interactive components
+![image](https://github.com/user-attachments/assets/4287decf-6fb2-495d-8e25-9c58d60dfe37)
+![image](https://github.com/user-attachments/assets/9f4a9a4e-fb3e-4963-9b27-7eb806a57af5)
+![image](https://github.com/user-attachments/assets/46df9caa-6932-4a23-9bd5-36286efc2415)
+![image](https://github.com/user-attachments/assets/a152d8f3-87f9-41be-b005-c99b64b2bde8)
+
+
 
 ## Tech Stack
 
